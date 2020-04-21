@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>states Example</title>
+    <style>
+      /* [속성값]을 입력하여 가상 셀렉터를 만듦 */
+      .box {
+        background-color: red;
+        font-size: 40px;
+      }
+      .box:hover {
+        background-color: pink;
+      }
+      .box:active {
+        background-color: green;
+      }
+      /* focus 활용 예시
+      .box:focus {
+        background-color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <span class="box">lalala</span>
+    <!-- focus 활용 에시
+        만일 focus와 hover 를 같이 쓴다면, focus 적용됨(우선순위 높음)
+    <textarea class="box">lalala</textarea> 
+    -->
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pseudoSelector Example</title>
+    <style>
+      /* [속성값]을 입력하여 가상 셀렉터를 만듦 */
+      input[type="submit"] {
+        background-color: red;
+      }
+      input[type="password"] {
+        background-color: green;
+      }
+      input {
+        border: 1px solid black;
+      }
+      .box {
+        background-color: green;
+        display: block;
+        height: 100px;
+        border: 2px solid black;
+      }
+      .child {
+        width: 40px;
+      }
+
+      /* nth-child 를 통해 가상 셀렉터를 만듦 */
+      /* .box:last-child {
+        background-color: pink;
+      } */
+
+      /* nth-child 를 통해 가상 셀렉터를 만듦 */
+      /* .box:nth-child(2n + 1) {
+        background-color: pink;
+      } */
+
+      /* >(직계자식) 을 통해 가상 셀렉터를 만듦 */
+      .container > .box {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" />
+        <input type="submit" />
+      </div>
+    </div>
+  </body>
+</html>

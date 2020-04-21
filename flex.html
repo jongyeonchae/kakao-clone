@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Position Example</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      /* 
+      justify-content 는 수직, align-items 는 수평
+      
+      .father{
+          display: flex;
+          justify-content: space-around;
+          align-items: end;
+          height: 100%
+          flex-direction: column;
+      }  
+      */
+
+      /* flex 를 사용할 떄는 father 에 적용
+      
+      flex direction: row; 일 때(default) 
+      justify-content 는 수평, align-items 는 수직 */
+
+      .father {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: red;
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>

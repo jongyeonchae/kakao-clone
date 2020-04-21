@@ -1,0 +1,16 @@
+h1 {
+  property-name: value;
+  property-name: value;
+  property-name: value;
+  color: green;
+  font-size: 16px;
+  font-weight: 220;
+}
+
+#name {
+  property-name: value;
+}
+
+.name {
+  property-name: value;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>animation Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+      }
+      /* animation 이 두 단계로 구분될 경우     
+      @keyframes scaleAndRotateSquare {
+        from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+      } */
+
+      @keyframes scaleAndRotateSquare {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Text</div>
+  </body>
+</html>
